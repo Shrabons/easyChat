@@ -70,7 +70,7 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   position: absolute;
-  bottom: 350px;
+  bottom: 292px;
   left: 300px;
   animation: runing_round2 4s linear infinite;
   -webkit-animation: runing_round2 4s linear infinite;
@@ -112,7 +112,7 @@
 }
 .login__main .login__left .login__text .team3 {
   position: absolute;
-  bottom: 270px;
+  bottom: 200px;
   right: 250px;
 }
 /* right side working start  */
