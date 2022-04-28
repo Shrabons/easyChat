@@ -1,0 +1,231 @@
+.signup {
+  background: #ecf0f1;
+}
+
+.signup__main {
+  display: flex;
+}
+
+.signup__main .signup__left {
+  width: 50%;
+  height: 100vh;
+  background: linear-gradient(216.39deg, #63e7f8 -2.88%, #50fdde 45.12%);
+}
+.signup__main .signup__left .signup__text {
+  margin-top: 140px;
+  margin-left: 200px;
+}
+.signup__main .signup__left .signup__text .short__des {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 84px 0;
+  width: 70%;
+}
+.signup__main .signup__left .signup__text .signup__free {
+  margin-bottom: 60px;
+}
+.signup__main .signup__left .signup__text .signup__free p {
+  font-size: 18px;
+  font-weight: 500;
+  width: 49%;
+  margin-top: 10px;
+}
+.signup__main .signup__left .signup__text .signup__free .signup__free__heading {
+  display: flex;
+}
+.signup__main
+  .signup__left
+  .signup__text
+  .signup__free
+  .signup__free__heading
+  span {
+  width: 33px;
+  height: 33px;
+  background: #3846c8;
+  color: #fff;
+  text-align: center;
+  line-height: 33px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: inline-block;
+  font-size: 18px;
+}
+.signup__main
+  .signup__left
+  .signup__text
+  .signup__free
+  .signup__free__heading
+  h3 {
+  font-size: 33px;
+  text-transform: capitalize;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-left: 15px;
+}
+/* right side working start  */
+.signup__main .signup__right {
+  width: 50%;
+  height: 100vh;
+  background: #fff;
+}
+.signup__main .signup__right .signup__logo {
+  text-align: end;
+  margin-top: 50px;
+  margin-right: 100px;
+}
+.right__container {
+  width: 60%;
+  margin: 0 auto;
+}
+.signup__main .signup__right .signup__form {
+  margin-top: 10px;
+}
+.signup__main .signup__right .signup__form h2 {
+  font-size: 55px;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 25px;
+}
+.form__filed .form__group {
+  margin-bottom: 20px;
+}
+.form__filed label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #5d5d5d;
+  margin-bottom: 3px;
+  display: block;
+}
+.reset__email {
+  width: 100%;
+  display: block;
+  padding: 18px;
+  font-size: 18px;
+  background: #f7f7f9;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.form__filed input {
+  width: 75%;
+  display: block;
+  padding: 18px;
+  font-size: 18px;
+  background: #f7f7f9;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+::placeholder {
+  font-size: 15px;
+  color: #c7c7c7;
+}
+.form__filed button {
+  width: 75%;
+  display: block;
+  padding: 18px;
+  font-size: 18px;
+  background: #3846c8;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  margin-top: 25px;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.social__signup {
+  margin-top: 30px;
+}
+
+.social__signup h3 {
+  width: 75%;
+  text-align: center;
+  color: #5d5d5d;
+}
+.social__signup .social__button {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.social__signup .social__button .google {
+  background: #fff5f5;
+  padding: 15px 0;
+  width: 47%;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.social__signup .social__button .facebooks {
+  background: #f6faff;
+  padding: 15px 0;
+  width: 47%;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.social__signup .social__button .facebooks .fb {
+  color: #1877f2;
+  margin-right: 15px;
+}
+.social__signup p {
+  width: 75%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 27px;
+  margin-bottom: 0;
+}
+.social__signup .login__linke {
+  font-weight: 800;
+  text-decoration: none;
+  color: #634aff;
+}
+.pass {
+  width: 73%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pass .forgot {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1877f2;
+  cursor: pointer;
+}

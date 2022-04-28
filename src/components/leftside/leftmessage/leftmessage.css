@@ -1,0 +1,203 @@
+.messsage__app {
+  padding: 20px;
+}
+.messsage__app .message__head .logo h2 {
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 10px;
+}
+.messsage__app .message__head .search button {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #9999a9;
+  background: #efeff5;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 20px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.messsage__app .message__head .search button:hover {
+  background: #6364af;
+  color: #fff;
+}
+.messsage__app .search__input {
+  position: relative;
+  margin-top: 15px;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 1px;
+}
+.messsage__app .search__input input {
+  width: 100%;
+  padding: 8px;
+  padding-left: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.messsage__app .search__input button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  outline: none;
+  background: #efeff5;
+  padding: 8px 16px;
+  font-size: 17px;
+  font-weight: 600;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/* message menu style :start  */
+.message__menu ul li {
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.message__menu ul .current {
+  color: #3846c8;
+  border-bottom: 2px solid #3846c8;
+}
+
+/* personal styled start  */
+.personal .personal__title {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9696a6;
+  margin: 35px 0;
+}
+.personal .member__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #f1f2f7;
+}
+.personal .member__item .member__img {
+  width: 10%;
+}
+
+.personal .member__item .member__img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.personal .member__item .member__details {
+  width: 83%;
+}
+
+.personal .member__item .member__details .member__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.personal .member__item .member__details .member__name h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+.personal .member__item .member__details .member__name h6 {
+  font-size: 14px;
+  color: #b0b5c7;
+}
+
+.list__message p {
+  color: #717182;
+}
+/* team styled start  */
+.team .team__title {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9696a6;
+  margin: 35px 0;
+}
+.team .team__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #f1f2f7;
+}
+.team .team__item .team__img {
+  width: 21%;
+  position: relative;
+}
+.team .team__item .team__img .team__one {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  z-index: 3;
+}
+.team .team__item .team__img .team__two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.team .team__item .team__img .team__three {
+  position: absolute;
+  top: 16px;
+  left: 30px;
+  z-index: 1;
+}
+.team .team__item .team__img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.team .team__item .team__details {
+  width: 75%;
+}
+
+.team .team__item .team__details .team__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team .team__item .team__details .team__name h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+.team .team__item .team__details .team__name h6 {
+  font-size: 14px;
+  color: #b0b5c7;
+}
+
+.team__list__message p {
+  color: #717182;
+}

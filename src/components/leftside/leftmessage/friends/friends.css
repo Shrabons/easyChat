@@ -1,0 +1,61 @@
+.friend__part .friend__title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9696a6;
+  margin: 35px 0;
+}
+.friend__part .friend__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #f1f2f7;
+}
+.friend__part .friend__item .friend__img {
+  width: 10%;
+}
+
+.friend__part .friend__item .friend__img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.friend__part .friend__item .friend__details {
+  width: 83%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .friend__part .friend__item .friend__details .friend__name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } */
+.friend__part .friend__item .friend__details .friend__name h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+.friend__part .friend__item .friend__details .friend__name h6 {
+  font-size: 14px;
+  color: #b0b5c7;
+}
+
+.friend__btn button {
+  color: #bdc3c7;
+  font-size: 23px;
+  font-weight: 500;
+  background: transparent;
+  outline: none;
+  border: none;
+}

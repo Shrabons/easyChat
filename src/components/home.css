@@ -1,0 +1,4 @@
+.easychat__app {
+  display: flex;
+  justify-content: space-between;
+}

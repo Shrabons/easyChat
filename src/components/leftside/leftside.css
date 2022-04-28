@@ -1,0 +1,15 @@
+.left {
+  width: 26%;
+  background: #f9f9fc;
+  height: 100vh;
+  display: flex;
+}
+.left .left__menu {
+  width: 21%;
+  background: #4849a1;
+}
+
+.left .left__message {
+  width: 79%;
+  background: #f9f9fc;
+}

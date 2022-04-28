@@ -1,0 +1,196 @@
+.middle {
+  width: 50%;
+  background: #ffffff;
+  height: 100vh;
+  position: relative;
+}
+.message__head .message__users {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 31px 8px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 31px 8px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 31px 8px rgba(0, 0, 0, 0.16);
+  margin-top: 30px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  padding: 20px 22px;
+  position: relative;
+  z-index: 999;
+}
+.message__head .message__users .message__bio {
+  display: flex;
+}
+.message__head .message__users .message__bio .message__bio__img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.message__head .message__users .message__bio .message__user_name {
+  margin-left: 13px;
+}
+
+.message__head .message__users .message__bio .message__user_name h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 3px;
+  text-transform: capitalize;
+}
+.message__head .message__users .message__bio .message__user_name span {
+  color: #a6adc2;
+  font-weight: 500;
+}
+.message__head .message__opation ul li {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  text-align: center;
+  background: #f4f4fa;
+  color: #c4c4d5;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* message card styled start  */
+.message__body {
+  width: 100%;
+  position: absolute;
+  bottom: 66px;
+  left: 0;
+}
+.message__body .message__card {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+.message__body .message__card .message__img {
+  width: 9%;
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+.message__body .message__card .message__img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  object-fit: fill;
+}
+.message__body .message__card .message__text {
+  width: 80%;
+}
+.message__body .message__card .message__text .text__card {
+  background: #4849a1;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 15px;
+  border-bottom-left-radius: 0;
+}
+.message__body .message__card .message__text .text__card p {
+  margin: 0;
+  word-break: break-word;
+}
+.message__body .message__card .message__text span {
+  color: #a6adc2;
+  font-size: 12px;
+  font-weight: 600;
+  display: block;
+  margin-top: 6px;
+}
+.message__body .message__card .message__setting {
+  width: 5%;
+  align-self: center;
+  margin-top: -28px;
+}
+.message__body .message__card .message__setting button {
+  font-size: 30px;
+  color: #aab1bd;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+/* message footer start  */
+.message__footer {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+}
+.message__footer .message__filed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.message__footer .message__filed .message__input {
+  width: 94%;
+  position: relative;
+}
+.message__footer .message__filed .message__input button {
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: #aab1bd;
+}
+.message__footer .message__filed .message__input input {
+  width: 100%;
+  padding: 10px 0;
+  padding-left: 46px;
+  outline: none;
+  border: 1px solid #d5d9e3;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+.message__footer .message__filed .message__input .microphones {
+  position: absolute;
+  top: 7px;
+  left: 20px;
+}
+.message__footer .message__filed .message__input .input__group {
+  position: absolute;
+  top: 7px;
+  right: 20px;
+}
+.message__footer .message__filed .message__input .input__group button {
+  margin: 0 7px;
+}
+.message__footer .message__filed .message__send {
+  width: 5%;
+  text-align: end;
+}
+.message__footer .message__filed .message__send .send__btn {
+  font-size: 22px;
+  outline: 0;
+  border: none;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #ececf5;
+  color: #4849a1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
