@@ -130,7 +130,7 @@ const MessageMember = () => {
                 </div>
                 <div className="member__details">
                   <div className="member__name">
-                    <h4>{itemFAll.senderName}</h4>
+                    <h4 style={select == itemFAll.sendId ? selectTitle : noselectTitle}>{itemFAll.senderName}</h4>
                     <h6>2 hour ago</h6>
                   </div>
                   <div className="list__message">
@@ -188,12 +188,18 @@ const MessageMember = () => {
   </div>
   )
 }
-
+// #e30a0a 
 const selectMan = {
-  background: "red"
+  background: "linear-gradient(0deg, #E5E5E5 0%, #F9F9FC 54.8%)",
+  borderBottom: "3px solid rgb(72, 73, 161)"
 }
 const noselectMan = {
   background: "transparent"
 }
-
+const selectTitle = {
+  color: "rgb(72, 73, 161)"
+}
+const noselectTitle = {
+  color: "#000"
+}
 export default MessageMember
