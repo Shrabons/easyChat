@@ -152,7 +152,7 @@ const Login = () => {
                        </div>
                        <div className="right__container">
                            <div className="login__form">
-                               <h2>Login</h2>
+                               <h2>Login hyce</h2>
                                <div className="form__filed">
                                    <form action="#">
                                       
