@@ -15,7 +15,7 @@ const Friends = () => {
     onValue(friendAcceptRef, (snapshot) => {
       let friendArr = []
       snapshot.forEach((friend)=>{
-        if(friend.val().receiverId !== auth.currentUser.uid){
+        if(friend.val().receiverId == auth.currentUser.uid){
         friendArr.push(friend.val())
         }
       })
