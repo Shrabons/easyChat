@@ -1,10 +1,12 @@
 import { getAuth } from "firebase/auth";
 import { getDatabase, onValue, push, ref, set } from "firebase/database";
+import { getDownloadURL, getStorage, ref as imgRef, uploadBytesResumable } from "firebase/storage";
 import moment from "moment";
 import React, { useEffect, useState } from 'react';
 import { BsThreeDots } from "react-icons/bs";
 import { FaEllipsisV, FaFileImage, FaMicrophone, FaPaperPlane, FaPhoneAlt, FaVideo } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import attachFile from '../../images/attach_file.png';
 import './middle.css';
 
@@ -13,26 +15,70 @@ import './middle.css';
 const Middle = () => {
   const auth = getAuth()
   const db = getDatabase();
+  const storage = getStorage();
   let [message, setMessage] = useState("")
+  let [messageEmpty, setMessageEmpty] = useState("")
+  let [messageImg, setMessageImg] = useState()
+  // let [messageImgSend, setMessageImgEnd] = useState([])
   let [messageShow, setMessageShow] = useState([])
   let useData = useSelector((item)=> item.activeManSelect)
- 
+
 
   const handleChangeMessage = (e) => {
     setMessage(e.target.value)
   }
   let dateAndTime = new Date();
   let d = dateAndTime.toJSON()
+
+  const handleImageSelect = (e) => {
+    setMessageImg(e.target.files[0])
+  }
+
   const handleSendMessage = () => {
-    set(push(ref(db, 'messages/')), {
-      mes: message,
-      receiverId: auth.currentUser.uid,
-      receiverName: auth.currentUser.displayName,
-      senderId: useData.userId,
-      senderName: useData.userName,
-      date: d
-    });
-    setMessage("")
+    if(message){
+      set(push(ref(db, 'messages/')), {
+        mes: message,
+        receiverId: auth.currentUser.uid,
+        receiverName: auth.currentUser.displayName,
+        senderId: useData.userId,
+        senderName: useData.userName,
+        date: d
+      });
+      setMessage("")
+    }else if(messageImg) {
+      // setMessageImgEnd(messageImg)
+      console.log(messageImg)
+      console.log("this is a pic update")
+      const storageRef = imgRef(storage, `userImageSend/${auth.currentUser.uid}/${messageImg.name}`);
+      const uploadTask = uploadBytesResumable(storageRef, messageImg);
+        uploadTask.on('state_changed', (snapshot) => {
+          const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          console.log('Upload is ' + progress + '% done');
+          
+          
+        },
+        (error) => {
+          console.log(error)
+        }, 
+        () => {
+          getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+            console.log('File available at', downloadURL);
+            set(push(ref(db, 'messages/')), {
+              pic: downloadURL,
+              receiverId: auth.currentUser.uid,
+              receiverName: auth.currentUser.displayName,
+              senderId: useData.userId,
+              senderName: useData.userName,
+              date: d
+            });
+          });
+        },
+        setMessageImg("")
+        );
+    }else{
+      console.log("this is not message and pic")
+    }
+    
   
   }
 
@@ -84,7 +130,7 @@ const Middle = () => {
           </div>
           <div className="message__text">
             <div className="text__card" style={mesItem.senderId == useData.userId ? texCartMe : texCartYou}>
-              <p>{mesItem.mes}</p>
+            { mesItem.pic ?<Link to={mesItem.pic}> <img width={330} src={mesItem.pic} alt="se" /></Link> : <p>{mesItem.mes}</p>}
             </div>
             <span> {moment(mesItem.date).fromNow()}</span>
           </div>
@@ -104,7 +150,11 @@ const Middle = () => {
               <button className="microphones"><FaMicrophone /></button>
             <div className="input__group">
               <button><img src={attachFile} alt="attach file iamge" /></button>
-              <button><FaFileImage /></button>
+   
+              <input  onChange={handleImageSelect} type="file" id="myfile" name="myfile" hidden/>
+              <button> 
+                <label  htmlFor="myfile"><FaFileImage /></label>
+              </button>
             </div>
           </div>
           <div className="message__send">
