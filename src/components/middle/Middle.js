@@ -17,11 +17,15 @@ const Middle = () => {
   const db = getDatabase();
   const storage = getStorage();
   let [message, setMessage] = useState("")
-  let [messageEmpty, setMessageEmpty] = useState("")
+
   let [messageImg, setMessageImg] = useState()
-  // let [messageImgSend, setMessageImgEnd] = useState([])
+
   let [messageShow, setMessageShow] = useState([])
+
+
+  let m = 101
   let useData = useSelector((item)=> item.activeManSelect)
+
 
 
   const handleChangeMessage = (e) => {
@@ -151,7 +155,7 @@ const Middle = () => {
             <div className="input__group">
               <button><img src={attachFile} alt="attach file iamge" /></button>
    
-              <input  onChange={handleImageSelect} type="file" id="myfile" name="myfile" hidden/>
+              <input  onChange={handleImageSelect} type="file" id="myfilesend" name="myfile" hidden/>
               <button> 
                 <label  htmlFor="myfile"><FaFileImage /></label>
               </button>
@@ -165,6 +169,7 @@ const Middle = () => {
     </div>
   )
 }
+
 let send = {
   width: "450px",
   marginRight: "auto"
@@ -172,9 +177,8 @@ let send = {
 let recieve = {
   width: "450px",
   marginLeft: "auto",
-  flexDirection:" row-reverse"
-
-  
+  flexDirection:" row-reverse",
+  marginRight: "5px"
 }
 let imaghide = {
   display: "none"

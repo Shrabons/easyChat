@@ -71,6 +71,8 @@
   position: absolute;
   bottom: 66px;
   left: 0;
+  overflow-y: scroll;
+  height: 100vh;
 }
 .message__body .message__card {
   width: 450px;

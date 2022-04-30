@@ -82,6 +82,7 @@ const Rightside = (props) => {
 
   const handleImage = (e) => {
     setImages(e.target.files[0])
+    console.log(e.target.files[0])
   }
 
   const handleUpName = (e) => {
